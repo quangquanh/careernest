@@ -18,6 +18,9 @@ import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import com.nhc.CareerNest.util.security.*;
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
@@ -60,6 +63,20 @@ public class SecurityConfiguration {
     }
 
     @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.addAllowedOrigin("*"); // Cho phép tất cả các origin
+        configuration.addAllowedMethod("*"); // Cho phép tất cả các phương thức
+        configuration.addAllowedHeader("*"); // Cho phép tất cả các header
+        configuration.setAllowCredentials(true);
+        configuration.setMaxAge(3600L);
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
+
+    @Bean
     public SecurityFilterChain filterChain(
             HttpSecurity http,
             CustomAuthenticationEntryPoint customAuthenticationEntryPoint) throws Exception {
@@ -80,6 +97,7 @@ public class SecurityConfiguration {
 
         http
                 .csrf(c -> c.disable())
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .authorizeHttpRequests(
                         auth -> auth
                                 .requestMatchers(whiteList).permitAll()
