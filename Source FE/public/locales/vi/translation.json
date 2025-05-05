@@ -1,0 +1,341 @@
+{
+    "header": {
+        "home_page": "Trang chủ",
+        "profile_cv": "Hồ sơ & CV",
+        "find_job": "Tìm việc làm",
+        "login": "Đăng nhập",
+        "recruiter": "Nhà tuyển dụng",
+        "dropdown_account": {
+            "overview": "Tổng quan hồ sơ",
+            "message": "Tin nhắn",
+            "my_job": "Việc làm của tôi",
+            "job_via_email": "Nhận việc qua email",
+            "logout": "Đăng xuất"
+        },
+        "dropdown_admin": {
+            "dashboard": "Trang quản trị",
+            "account_infor": "Thông tin cá nhân"
+        },
+        "dropdown_recruiter": {
+            "dashboard": "Trang quản trị",
+            "message": "Tin nhắn"
+        }
+    },
+    "login": {
+        "login_title": "Đăng nhập dành cho ứng viên",
+        "email": "Email",
+        "email_placeholder": "name@company.com",
+        "password": "Mật khẩu",
+        "remember_me": "Nhớ mật khẩu",
+        "forgot_password": "Quên mật khẩu?",
+        "login_button": "Đăng nhập",
+        "no_account": "Bạn chưa có tài khoản?",
+        "register_now": "Đăng ký ngay"
+    },
+    "register": {
+        "register_title": "Đăng ký tài khoản mới",
+        "full_name": "Họ và tên",
+        "full_name_placeholder": "Nguyen Van A",
+        "email": "Email",
+        "email_placeholder": "name@company.com",
+        "password": "Mật khẩu",
+        "confirm_password": "Xác nhận mật khẩu",
+        "agree_terms": "Tôi đồng ý với Điều khoản",
+        "register_button": "Tạo tài khoản",
+        "already_have_account": "Bạn đã có tài khoản?",
+        "back_to_login": "Quay về trang chủ để đăng nhập"
+    },
+    "homepage": {
+        "find_job_section": {
+            "hero_title": "Tìm việc làm nhanh 24h, việc làm mới nhất trên toàn quốc.",
+            "hero_subtitle": "Tiếp cận 40,000+ tin tuyển dụng việc làm mỗi ngày từ hàng nghìn doanh nghiệp uy tín tại Việt Nam",
+            "suggestions": "Gợi ý cho bạn",
+            "search_button": "Tìm kiếm",
+            "search_placeholder": "Từ khóa công việc..."
+        },
+        "cv_section": {
+            "section_title": "Công cụ tốt nhất cho hành trang ứng tuyển của bạn",
+            "profile": {
+                "title": "Hồ sơ cá nhân",
+                "description": "Kiến tạo hồ sơ ITviec với cấu trúc chuẩn mực cùng các gợi ý chi tiết",
+                "button": "Cập nhật hồ sơ"
+            },
+            "cv": {
+                "title": "Quản lý CV",
+                "tag": "Mới",
+                "description": "homepage.cv_section.cv.description",
+                "button": "Xem CV"
+            },
+            "blog": {
+                "title": "Blog về IT",
+                "description": "Cập nhật thông tin lương thưởng, nghề nghiệp và kiến thức ngành IT",
+                "button": "Khám phá blog"
+            }
+        },
+        "recruitment_section": {
+            "title": "Tin tuyển dụng mới nhất",
+            "button_load_more": "Xem thêm",
+            "loading": "Đang tải...",
+            "button_other_jobs": "Xem các công việc khác"
+        },
+        "top_recruiter_section": {
+            "title": "Top nhà tuyển dụng hàng đầu"
+        },
+        "featured_posts_section": {
+            "section_title": "BÀI VIẾT NỔI BẬT",
+            "sql": {
+                "title": "Top 30+ câu hỏi phỏng vấn SQL phổ biến nhất",
+                "description": "SQL là một kỹ năng quan trọng trong ngành công nghệ thông tin, đặc biệt khi làm việc với cơ sở dữ liệu. Việc chuẩn bị các câu hỏi phỏng vấn SQL là yếu tố then chốt giúp bạn thành...",
+                "button": "Xem thêm"
+            },
+            "html_css": {
+                "title": "Top 50+ câu hỏi phỏng vấn HTML CSS mọi cấp độ phổ biến",
+                "description": "Trong bài viết này, ITviec tổng hợp 50+ câu hỏi phỏng vấn HTML CSS dành cho HTML/CSS Developer từ cấp độ đầu vào (Junior) cho đến cấp cao (Senior). Hãy cùng cập nhật bộ câu hỏi và thử trả lời...",
+                "button": "Xem thêm"
+            },
+            "writing_contest": {
+                "title": "“Là IT Thì Mình Cứ Viết Đi” – Cuộc thi viết hấp dẫn nhất cho dân IT chính thức trở lại",
+                "description": "Cuộc thi viết “Là IT Thì Mình Cứ Viết Đi” do ITviec tổ chức từ ngày 26/04/2023 đến 26/06/2023, nhân dịp kỷ niệm 10 năm thành lập. Cuộc thi là sân chơi hấp dẫn có đủ cỗ vũ tất cả anh em...",
+                "button": "Xem thêm"
+            }
+        }
+    },
+    "job_card": {
+        "created_time": "ngày trước",
+        "salary": "Lương",
+        "expired": "Hết hạn ứng tuyển",
+        "apply_button": "Ứng tuyển",
+        "already_apply_button": "Đã ứng tuyển"
+    },
+    "cv_card": {
+        "created_time": "Ngày tạo",
+        "view": "Xem hồ sơ",
+        "edit": "Sửa",
+        "delete": "Xóa"
+    },
+    "find_job_card": {
+        "created_time": " ngày trước",
+        "expired": "Hết hạn ứng tuyển"
+    },
+    "detail_job_card": {
+        "created_time": " ngày trước",
+        "expired": "Đã hết hạn ứng tuyển",
+        "apply_button": "Ứng tuyển",
+        "at_office": "Tại văn phòng"
+    },
+    "overview_page": {
+        "short_info": {
+            "detail": "Chi tiết hồ sơ"
+        },
+        "attached_cv": {
+            "title": "CV đính kèm của bạn",
+            "manage_cv": "Quản lý CV",
+            "upload_cv": "Tải CV lên",
+            "empty_cv": "Chưa có CV nào được upload",
+            "file_condition": "Chỉ chấp nhận file định dạng .docx, .doc, .pdf *"
+        },
+        "online_cv": {
+            "title": "CV online của bạn trên CareerNest",
+            "created": "Hồ sơ được tạo",
+            "description": "Hồ sơ của bạn đã sẵn sàng để tạo CV. Tiếp tục hoàn thiện hồ sơ để CV của bạn thêm thu hút.",
+            "manage_cv": "Quản lý CV"
+        },
+        "user_activity": {
+            "title": "Hoạt động của bạn",
+            "applied_jobs": "Việc làm đã ứng tuyển",
+            "saved_jobs": "Việc làm đã lưu"
+        }
+    },
+    "profile_page": {
+        "title": "Thông tin tài khoản",
+        "change_password": "Đổi mật khẩu",
+        "applied_jobs": "Việc làm đã ứng tuyển",
+        "saved_jobs": "Việc làm đã lưu",
+        "email": "Địa chỉ Email",
+        "address": "Địa chỉ nơi ở",
+        "gender": "Giới tính",
+        "phone": "Số điện thoại",
+        "dob": "Ngày sinh",
+        "edit_button": "Sửa thông tin",
+        "update_account_form": {
+            "fullName": "Họ và tên",
+            "email": "Email",
+            "dob": "Ngày sinh",
+            "gender": "Giới tính",
+            "phone": "Số điện thoại",
+            "address": "Địa chỉ",
+            "province": "Tỉnh thành",
+            "portfolio": "Porfolio (nếu có)",
+            "save": "Lưu",
+            "cancel": "Hủy bỏ",
+            "selectProvince": "Chọn tỉnh thành"
+        }
+    },
+    "cv_manage_page": {
+        "title": "Danh sách CV của bạn",
+        "button_add": "Tạo mới",
+        "online_cv": {
+            "title": "CV online của bạn trên CareerNest"
+        },
+        "empty": "Chưa có CV online nào được tạo."
+    },
+    "cv_create_page": {
+        "title": "Thông tin tạo hồ sơ xin việc",
+        "cv_title": "Tên hồ sơ",
+        "full_name": "Họ và tên",
+        "phone": "Số điện thoại",
+        "dob": "Ngày sinh",
+        "address": "Địa chỉ",
+        "skills": "Kỹ năng",
+        "description": "Giới thiệu",
+        "language": "Ngoại ngữ",
+        "education": "Học vấn",
+        "certificate": "Chứng chỉ đạt được",
+        "work_experience": "Kinh nghiệm làm việc",
+        "work_expe_button": "Thêm kinh nghiệm",
+        "work_expe": {
+            "company_name": "Tên công ty",
+            "address": "Địa chỉ",
+            "start_date": "Ngày bắt đầu",
+            "end_date": "Ngày kết thúc",
+            "job_description": "Mô tả công việc"
+        }
+    },
+    "my_job_page": {
+        "title": "Việc làm của tôi",
+        "applied_jobs": "Đã ứng tuyển",
+        "saved_jobs": "Đã lưu",
+        "limit": "Bạn có thể lưu tối đa 20 công việc.",
+        "sort_by": "Sắp xếp theo",
+        "sort_opt_1": "Ngày ứng tuyển gần nhất",
+        "sort_opt_2": "Ngày hết hạn gần nhất",
+        "sort_opt_3": "Ngày ứng tuyển xa nhất",
+        "sort_opt_4": "Việc làm mới nhất"
+    },
+    "job_via_email_page": {
+        "title": "Kỹ năng đã đăng ký",
+        "subtitle": "Đăng ký Job Robot để không bỏ lỡ việc làm phù hợp với kỹ năng của bạn.",
+        "subscribe_button": "Đăng ký",
+        "already_subscribed": "Đã đăng ký"
+    },
+    "find_job_page": {
+        "filter_section": {
+            "level": "Cấp bậc",
+            "work_type": "Hình thức làm  việc",
+            "salary": "Mức lương"
+        }
+    },
+    "interview_by_ai_page": {
+        "title": " Phỏng vấn giả lập bởi AI",
+        "paragraph_1": "Trang này được thiết kế để giúp bạn chuẩn bị cho các cuộc phỏng vấn xin việc thông qua công nghệ trí tuệ nhân tạo (AI).Bạn có thể trải nghiệm các tình huống phỏng vấn thực tế và nhận phản hồi ngay lập tức về cách trả lời của mình.",
+        "paragraph_2": "Với AI, bạn sẽ được phỏng vấn về các câu hỏi phổ biến trong nhiều lĩnh vực công việc, giúp bạn tự tin hơn khi bước vào cuộc phỏng vấn thật sự. Hệ thống sẽ phân tích và đưa ra những lời khuyên, giúp bạn cải thiện kỹ năng giao tiếp và phản ứng của mình.",
+        "paragraph_3": "Để bắt đầu, chỉ cần chọn loại phỏng vấn mà bạn muốn trải nghiệm, và AI sẽ hướng dẫn bạn qua từng bước một.",
+        "subtitle": "Bạn muốn phỏng vấn vị trí nào?",
+        "submit": "Bắt đầu phỏng vấn"
+    },
+    "roadmap_by_ai_page": {
+        "title": "Xây dựng lộ trình nghề nghiệp với các bước đơn giản",
+        "subtitle": "Định hướng đúng – Thành công nhanh – AI luôn đồng hành.",
+        "form": {
+            "title": "Thông tin tư vấn lộ trình",
+            "education": "Trình độ học vấn:",
+            "skills": "Kỹ năng hiện có:",
+            "work_expe": "Kinh nghiệm làm việc:",
+            "hobby": "Sở thích & đam mê:",
+            "career_objective": "Mục tiêu nghề nghiệp:",
+            "submit": "Gửi tư vấn"
+        }
+    },
+    "job_detail_page": {
+        "salary": "Lương",
+        "skills": "Kỹ năng",
+        "deadline": "Hạn nộp",
+        "consult_ai_button": "Tư vấn bởi AI",
+        "apply_button": "Ứng tuyển",
+        "save_button": "Lưu tin",
+        "already_saved_button": "Đã lưu",
+        "already_applied_button": "Đã ứng tuyển",
+        "message": "Nhắn tin",
+        "follow": "Theo dõi",
+        "recruiter": "Nhà tuyển dụng:",
+        "scale": "Quy mô:",
+        "address": "Địa chỉ",
+        "employees": " nhân viên",
+        "description": "Chi tiết công việc",
+        "information": "Thông tin tuyển dụng",
+        "job_detail": "Mô tả công việc",
+        "requirements": "Yêu cầu ứng viên",
+        "benefits": "Phúc lợi"
+    },
+    "company_detail_page": {
+        "analyze_company_culture": "Phân tích văn hóa công ty",
+        "introduction": "Giới thiệu nhà tuyển dụng",
+        "current_job": "Việc làm đang tuyển dụng",
+        "review": "Đánh giá",
+        "empty_review": "Chưa có bài đánh giá nào",
+        "review_button": "Gửi đánh giá",
+        "information": "Thông tin nhà tuyển dụng",
+        "scale": "Quy mô",
+        "employees": " nhân viên",
+        "address": "Địa chỉ",
+        "chat_with_recruiter": "Trò chuyên với nhà tuyển dụng",
+        "maps": "Bản đồ",
+        "share": "Chia sẻ công ty với bạn bè"
+    },
+    "modal_apply_job": {
+        "title": "Ứng tuyển ",
+        "upload": "Tải CV lên",
+        "cv_condition": "Chỉ chấp nhận file định dạng .docx, .doc, .pdf *",
+        "information": "Thông tin cá nhân",
+        "full_name": "Họ và tên",
+        "phone": "Số điện thoại",
+        "location": "Nơi làm việc mong muốn",
+        "cover_letter": "Thư xin việc",
+        "submit": "Nộp CV",
+        "cancel": "Bỏ qua"
+    },
+    "footer": {
+        "about": {
+            "title": "Về CAREERNEST",
+            "items": [
+                "Giới thiệu",
+                "Liên hệ hợp tác",
+                "Điều khoản dịch vụ",
+                "Chính sách bảo mật"
+            ]
+        },
+        "services": {
+            "title": "Dịch vụ",
+            "items": [
+                "Quản lý CV",
+                "Tìm kiếm việc làm",
+                "Bí quyết tìm việc",
+                "Tuyển dụng nhân sự",
+                "Review CV"
+            ]
+        },
+        "career": {
+            "title": "Xây dựng sự nghiệp",
+            "items": [
+                "Việc làm tốt nhất",
+                "Việc làm lương cao",
+                "Việc làm IT",
+                "Việc làm Senior",
+                "Việc làm bán thời gian"
+            ]
+        },
+        "contact": {
+            "title": "Liên hệ",
+            "hotline": "+84 377 586 305",
+            "email": "careernest@gmail.com"
+        },
+        "newsletter": {
+            "title": "Đăng ký nhận thông tin qua mail",
+            "placeholder": "Nhập địa chỉ email của bạn",
+            "button": "Đăng ký"
+        },
+        "app_download": {
+            "title": "Tải ứng dụng qua nền tảng"
+        }
+    }
+}

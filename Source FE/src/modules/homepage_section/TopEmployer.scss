@@ -1,0 +1,11 @@
+.carousel {
+    button {
+        span {
+            background-color: gainsboro;
+
+            &:hover {
+                background-color: gray !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+import { useQuery } from '@tanstack/react-query';
+import { getDetailRole } from '../services/roleService';
+
+export const useDetailRole = (id) => {
+    const {
+        data: res,
+        isLoading,
+        isFetching,
+        error,
+        refetch,
+    } = useQuery({
+        queryKey: ['detail_role', id],
+        queryFn: () => getDetailRole(id),
+        enabled: !!id,
+        staleTime: 60 * 1000,
+        refetchOnWindowFocus: false,
+    });
+
+    return {
+        res,
+        isLoading,
+        isFetching,
+        error,
+        refetch,
+    };
+};

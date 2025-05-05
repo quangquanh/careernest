@@ -1,0 +1,344 @@
+{
+    "header": {
+        "home_page": "Home",
+        "profile_cv": "Profile & CV",
+        "find_job": "Find Jobs",
+        "login": "Sign in",
+        "recruiter": "Recruiter",
+        "dropdown_account": {
+            "overview": "Profile Overview",
+            "message": "Messages",
+            "my_job": "My jobs",
+            "job_via_email": "Receive jobs via email",
+            "logout": "Log out"
+        },
+        "dropdown_admin": {
+            "dashboard": "System page",
+            "account_infor": "Account Information"
+        },
+        "dropdown_recruiter": {
+            "dashboard": "System page",
+            "message": "Messages"
+        }
+    },
+    "login": {
+        "login_title": "Login for candidates",
+        "email": "Email",
+        "email_placeholder": "name@company.com",
+        "password": "Password",
+        "remember_me": "Remember me",
+        "forgot_password": "Forgot password?",
+        "login_button": "Login",
+        "no_account": "Don't have an account?",
+        "register_now": "Register now"
+    },
+    "register": {
+        "register_title": "Register a new account",
+        "full_name": "Full name",
+        "full_name_placeholder": "Nguyen Van A",
+        "email": "Email",
+        "email_placeholder": "name@company.com",
+        "password": "Password",
+        "confirm_password": "Confirm password",
+        "agree_terms": "I agree to the Terms",
+        "register_button": "Create account",
+        "already_have_account": "Already have an account?",
+        "back_to_login": "Back to homepage to log in"
+    },
+    "homepage": {
+        "find_job_section": {
+            "hero_title": "Find jobs fast 24h, the newest jobs nationwide.",
+            "hero_subtitle": "Access 40,000+ job postings daily from thousands of reputable companies in Vietnam",
+            "suggestions": "Suggestions",
+            "search_button": "Search",
+            "search_placeholder": "Job keyword..."
+        },
+        "cv_section": {
+            "section_title": "The best tools to support your job application journey",
+            "profile": {
+                "title": "Personal Profile",
+                "description": "Build your ITviec profile with a structured format and detailed suggestions",
+                "button": "Update Profile"
+            },
+            "cv": {
+                "title": "CV Management",
+                "tag": "New",
+                "description": "Upgrade your CV with professional IT templates – recommended by employers",
+                "button": "View CV"
+            },
+            "blog": {
+                "title": "IT Blog",
+                "description": "Stay updated on salaries, careers, and IT industry insights",
+                "button": "Explore Blog"
+            }
+        },
+        "recruitment_section": {
+            "title": "Latest recruitment news",
+            "button_load_more": "Load more",
+            "loading": "Loading...",
+            "button_other_jobs": "See other jobs"
+        },
+        "top_recruiter_section": {
+            "title": "Outstanding Recruiters"
+        },
+        "featured_posts_section": {
+            "section_title": "FEATURED ARTICLES",
+            "sql": {
+                "title": "Top 30+ Most Common SQL Interview Questions",
+                "description": "SQL is a crucial skill in the IT industry, especially when working with databases. Preparing SQL interview questions is a key step to help you succeed...",
+                "button": "Read more"
+            },
+            "html_css": {
+                "title": "Top 50+ HTML CSS Interview Questions for All Levels",
+                "description": "In this article, ITviec summarizes over 50 HTML/CSS interview questions for developers from entry-level (Junior) to senior-level. Let's explore and answer these questions...",
+                "button": "Read more"
+            },
+            "writing_contest": {
+                "title": "“If You're in IT, Just Write It” – The most exciting writing contest for IT professionals returns",
+                "description": "The writing contest “If You're in IT, Just Write It” is hosted by ITviec from April 26, 2023, to June 26, 2023, celebrating ITviec’s 10th anniversary. This contest is a great opportunity for all IT folks to shine...",
+                "button": "Read more"
+            }
+        }
+    },
+    "job_card": {
+        "created_time": "days ago",
+        "salary": "Salary",
+        "expired": "Job expired",
+        "apply_button": "Apply",
+        "already_apply_button": "Already applied"
+    },
+    "cv_card": {
+        "created_time": "Created",
+        "view": "View profile",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "find_job_card": {
+        "created_time": " days ago",
+        "expired": "Expired"
+    },
+    "detail_job_card": {
+        "created_time": " days ago",
+        "expired": "Already Expired",
+        "apply_button": "Apply job",
+        "at_office": "At office",
+        "description": "Description",
+        "requirements": "Requirements",
+        "benefits": "Benefits"
+    },
+    "overview_page": {
+        "short_info": {
+            "detail": "Profile details"
+        },
+        "attached_cv": {
+            "title": "Attached CV",
+            "manage_cv": "CV Management",
+            "upload_cv": "Upload CV",
+            "empty_cv": "No CV uploaded yet",
+            "file_condition": "Only accept .docx, .doc, .pdf format files *"
+        },
+        "online_cv": {
+            "title": "Your online CV on CareerNest",
+            "created": "CVs Created",
+            "description": "Your profile is ready to create a CV. Continue completing your profile to make your CV more attractive.",
+            "manage_cv": "Manage CV"
+        },
+        "user_activity": {
+            "title": "Your Activity",
+            "applied_jobs": "Applied Jobs",
+            "saved_jobs": "Saved Jobs"
+        }
+    },
+    "profile_page": {
+        "title": "Account Information",
+        "change_password": "Change Password",
+        "applied_jobs": "Jobs Applied",
+        "saved_jobs": "Jobs Saved",
+        "email": "Email Address",
+        "address": "Residential Address",
+        "gender": "Gender",
+        "phone": "Phone Number",
+        "dob": "Date of Birth",
+        "edit_button": "Edit Information",
+        "update_account_form": {
+            "fullName": "Full Name",
+            "email": "Email",
+            "dob": "Date of Birth",
+            "gender": "Gender",
+            "phone": "Phone Number",
+            "address": "Address",
+            "province": "Province/City",
+            "portfolio": "Portfolio (optional)",
+            "save": "Save",
+            "cancel": "Cancel",
+            "selectProvince": "Select a province"
+        }
+    },
+    "cv_manage_page": {
+        "title": "List your CVs",
+        "button_add": "Create",
+        "online_cv": {
+            "title": "Your online CV on CareerNest"
+        },
+        "empty": "No online CV has been created yet."
+    },
+    "cv_create_page": {
+        "title": "CV Creation Information",
+        "cv_title": "CV Title",
+        "full_name": "Full Name",
+        "phone": "Phone Number",
+        "dob": "Date of Birth",
+        "address": "Address",
+        "skills": "Skills",
+        "description": "Introduction",
+        "language": "Foreign Language",
+        "education": "Education",
+        "certificate": "Certificates",
+        "work_experience": "Work Experience",
+        "work_expe_button": "New work experience",
+        "work_expe": {
+            "company_name": "Company Name",
+            "address": "Address",
+            "start_date": "Start Date",
+            "end_date": "End Date",
+            "job_description": "Job Description"
+        }
+    },
+    "my_job_page": {
+        "title": "My jobs",
+        "applied_jobs": "Applied Jobs",
+        "saved_jobs": "Saved Jobs",
+        "limit": "You can save up to 20 jobs.",
+        "sort_by": "Sort by",
+        "sort_opt_1": "Last applied date",
+        "sort_opt_2": "Nearest Expiration Date",
+        "sort_opt_3": "Latest application date",
+        "sort_opt_4": "Latest jobs"
+    },
+    "job_via_email_page": {
+        "title": "Registered Skills",
+        "subtitle": "Subscribe to Job Robot to never miss a job that matches your skills.",
+        "subscribe_button": "Subscribe",
+        "already_subscribed": "Already subscribed"
+    },
+    "find_job_page": {
+        "filter_section": {
+            "level": "Level",
+            "work_type": "Work type",
+            "salary": "Salary"
+        }
+    },
+    "interview_by_ai_page": {
+        "title": "AI-Powered Mock Interview",
+        "paragraph_1": "This page is designed to help you prepare for job interviews through artificial intelligence (AI) technology. You can experience realistic interview scenarios and receive immediate feedback on your responses.",
+        "paragraph_2": "With AI, you'll be interviewed on common questions across various job fields, helping you become more confident when entering a real interview. The system will analyze and provide advice to help you improve your communication skills and responsiveness.",
+        "paragraph_3": "To get started, simply choose the type of interview you'd like to experience, and AI will guide you through each step.",
+        "subtitle": "Which position would you like to interview for?",
+        "submit": "Start Interview"
+    },
+    "roadmap_by_ai_page": {
+        "title": "Build Your Career Roadmap with Simple Steps",
+        "subtitle": "Right Direction – Fast Success – AI Always by Your Side.",
+        "form": {
+            "title": "Career Roadmap Consultation Information",
+            "education": "Education Level:",
+            "skills": "Current Skills:",
+            "work_expe": "Work Experience:",
+            "hobby": "Hobbies & Passions:",
+            "career_objective": "Career Objective:",
+            "submit": "Submit"
+        }
+    },
+    "job_detail_page": {
+        "salary": "Salary",
+        "skills": "Skills",
+        "deadline": "Application Deadline",
+        "consult_ai_button": "Consult by AI",
+        "apply_button": "Apply",
+        "already_saved_button": "Already saved",
+        "already_applied_button": "Already applied",
+        "save_button": "Save Job",
+        "message": "Message",
+        "follow": "Follow",
+        "recruiter": "RECRUITER:",
+        "scale": "Scale:",
+        "address": "Address",
+        "employees": " employees",
+        "description": "Detail Job",
+        "information": "Recruiting Information",
+        "job_detail": "Job Description",
+        "requirements": "Requirements",
+        "benefits": "Benefits"
+    },
+    "company_detail_page": {
+        "analyze_company_culture": "Analyze Company Culture",
+        "introduction": "Introduction",
+        "current_job": "Current Job Openings",
+        "review": "Reviews",
+        "empty_review": "No reviews yet",
+        "review_button": "Submit Review",
+        "information": "Recruiter's Information",
+        "scale": "Company Size",
+        "employees": "employees",
+        "address": "Address",
+        "chat_with_recruiter": "Chat with Recruiter",
+        "maps": "Maps",
+        "share": "Share Company with Friends"
+    },
+    "modal_apply_job": {
+        "title": "Apply ",
+        "upload": "Upload CV",
+        "cv_condition": "Only .docx, .doc, .pdf files are accepted *",
+        "information": "Personal Information",
+        "full_name": "Full Name",
+        "phone": "Phone Number",
+        "location": "Desired Work Location",
+        "cover_letter": "Cover Letter",
+        "submit": "Submit CV",
+        "cancel": "Cancel"
+    },
+    "footer": {
+        "about": {
+            "title": "About CAREERNEST",
+            "items": [
+                "Introduction",
+                "Partnership Contact",
+                "Terms of Service",
+                "Privacy Policy"
+            ]
+        },
+        "services": {
+            "title": "Services",
+            "items": [
+                "CV Management",
+                "Job Search",
+                "Job Hunting Tips",
+                "Recruitment",
+                "CV Review"
+            ]
+        },
+        "career": {
+            "title": "Career Building",
+            "items": [
+                "Best Jobs",
+                "High Salary Jobs",
+                "IT Jobs",
+                "Senior Jobs",
+                "Part-time Jobs"
+            ]
+        },
+        "contact": {
+            "title": "Contact",
+            "hotline": "+84 377 586 305",
+            "email": "careernest@gmail.com"
+        },
+        "newsletter": {
+            "title": "Subscribe to our Newsletter",
+            "placeholder": "Enter your email address",
+            "button": "Subscribe"
+        },
+        "app_download": {
+            "title": "Download the App"
+        }
+    }
+}
