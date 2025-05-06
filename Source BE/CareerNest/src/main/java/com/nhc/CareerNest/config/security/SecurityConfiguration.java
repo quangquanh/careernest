@@ -67,6 +67,7 @@ public class SecurityConfiguration {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("http://34.132.23.249:3000"); // hoặc http://localhost:3000 nếu chạy local
         configuration.addAllowedOrigin("http://34.132.23.249"); // hoặc http://localhost:3000 nếu chạy local
+        configuration.addAllowedOrigin("https://careernest.click"); // hoặc http://localhost:3000 nếu chạy local
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
         configuration.setAllowCredentials(true);
