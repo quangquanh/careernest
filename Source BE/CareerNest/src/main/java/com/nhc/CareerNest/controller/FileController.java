@@ -56,7 +56,7 @@ public class FileController {
 
         // create directory if not exist
 
-        this.fileService.createDirectory(baseUri + folder);
+        this.fileService.createDirectory(folder);
         // storage file
         String uploadFile = this.fileService.store(file, folder);
 

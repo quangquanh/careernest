@@ -36,15 +36,30 @@ public class FileService implements IFileService {
     @Value("${careernest.upload-file.base-uri}")
     private String baseUri;
 
+    private Path resolveAbsolutePath(String folder, String fileName) {
+        return Paths.get(System.getProperty("user.dir")) // vd: CareerNest_Server/CareerNest
+                .resolve(baseUri)
+                .resolve(folder)
+                .resolve(fileName)
+                .normalize()
+                .toAbsolutePath();
+    }
+
+    private Path resolveFolderPath(String folder) {
+        return Paths.get(System.getProperty("user.dir"))
+                .resolve(baseUri)
+                .resolve(folder)
+                .normalize()
+                .toAbsolutePath();
+    }
+
     @Override
-    public void createDirectory(String folder) throws URISyntaxException {
-        URI uri = new URI(folder);
-        Path path = Paths.get(uri);
-        File tmpDir = new File(path.toString());
-        if (!tmpDir.isDirectory()) {
+    public void createDirectory(String folder) {
+        Path path = resolveFolderPath(folder);
+        if (!Files.exists(path)) {
             try {
-                Files.createDirectory(tmpDir.toPath());
-                System.out.println(">>> CREATE NEW DIRECTORY SUCCESSFUL, PATH = " + tmpDir.toPath());
+                Files.createDirectories(path);
+                System.out.println(">>> CREATE NEW DIRECTORY SUCCESSFUL, PATH = " + path);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -54,39 +69,34 @@ public class FileService implements IFileService {
     }
 
     @Override
-    public String store(MultipartFile file, String folder) throws URISyntaxException,
-            IOException {
-        // create unique filename
+    public String store(MultipartFile file, String folder) throws IOException {
         String finalName = System.currentTimeMillis() + "-" + file.getOriginalFilename();
-        URI uri = new URI(baseUri + folder + "/" + finalName);
-        Path path = Paths.get(uri);
+        Path targetPath = resolveAbsolutePath(folder, finalName);
+
+        Files.createDirectories(targetPath.getParent()); // Đảm bảo folder tồn tại
         try (InputStream inputStream = file.getInputStream()) {
-            Files.copy(inputStream, path,
-                    StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(inputStream, targetPath, StandardCopyOption.REPLACE_EXISTING);
         }
+
         return finalName;
     }
 
     @Override
-    public long getFileLength(String fileName, String folder) throws URISyntaxException {
-        URI uri = new URI(baseUri + folder + "/" + fileName);
-        Path path = Paths.get(uri);
-
-        File tmpDir = new File(path.toString());
-
-        // file không tồn tại, hoặc file là 1 director => return 0
-        if (!tmpDir.exists() || tmpDir.isDirectory())
+    public long getFileLength(String fileName, String folder) {
+        Path path = resolveAbsolutePath(folder, fileName);
+        File file = path.toFile();
+        if (!file.exists() || file.isDirectory())
             return 0;
-        return tmpDir.length();
+        return file.length();
     }
 
     @Override
-    public InputStreamResource getResource(String fileName, String folder)
-            throws URISyntaxException, FileNotFoundException {
-        URI uri = new URI(baseUri + folder + "/" + fileName);
-        Path path = Paths.get(uri);
-
-        File file = new File(path.toString());
+    public InputStreamResource getResource(String fileName, String folder) throws FileNotFoundException {
+        Path path = resolveAbsolutePath(folder, fileName);
+        File file = path.toFile();
+        if (!file.exists()) {
+            throw new FileNotFoundException("File not found: " + fileName);
+        }
         return new InputStreamResource(new FileInputStream(file));
     }
 
