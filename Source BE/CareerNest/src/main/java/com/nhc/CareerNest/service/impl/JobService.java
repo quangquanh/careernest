@@ -63,7 +63,7 @@ public class JobService implements IJobService {
         }
 
         // filter salary
-        if(jobCriteriaDTO.getSalary() != null && jobCriteriaDTO.getSalary().isPresent()){
+        if (jobCriteriaDTO.getSalary() != null && jobCriteriaDTO.getSalary().isPresent()) {
             Specification<Job> currentSpec = this.findAllWithSalarySpec(jobCriteriaDTO.getSalary().get());
             combinedSpec = combinedSpec.and(currentSpec);
         }
@@ -71,6 +71,12 @@ public class JobService implements IJobService {
         // filter active job
         Specification<Job> activeSpec = JobSpecification.activeSpec();
         combinedSpec = combinedSpec.and(activeSpec);
+
+        // filter job type
+        if (jobCriteriaDTO.getJobType() != null && jobCriteriaDTO.getJobType().isPresent()) {
+            Specification<Job> currentSpec = JobSpecification.JobTypeListMatch(jobCriteriaDTO.getJobType().get());
+            combinedSpec = combinedSpec.and(currentSpec);
+        }
 
         Page<Job> pageUser = this.jobRepository.findAll(combinedSpec, pageable);
 

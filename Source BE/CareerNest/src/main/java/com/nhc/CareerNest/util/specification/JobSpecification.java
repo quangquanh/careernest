@@ -43,4 +43,9 @@ public class JobSpecification {
         return (root, query, criteriaBuilder) -> criteriaBuilder.between(
                 root.get(Job_.SALARY), min, max);
     }
+
+    // filter Job type
+    public static Specification<Job> JobTypeListMatch(List<String> JobType) {
+        return (root, query, criteriaBuilder) -> criteriaBuilder.in(root.get(Job_.JOB_TYPE)).value(JobType);
+    }
 }
